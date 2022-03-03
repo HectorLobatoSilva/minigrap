@@ -1,9 +1,10 @@
 # Minigrap
 
-Its a simple terminal application ho receive 2 terminal inputs
+Its a simple terminal application ho receive 3 terminal inputs
 
-- Query: this param set the word you want to find in the file.
-- Filename: this param set the file that you want to read from.
+- **Query**: this param set the word you want to find in the file.
+- **Filename**: this param set the file that you want to read from.
+- **case_sensitive**: this enviroment variable saids to the app if have to get case sensitive, the default value is **false**.
 
 ## How to use
 
@@ -22,5 +23,17 @@ cargo build
 ```
 
 ```bash
-./minigrep to poem.txt
+./target/debug/minigrep to poem.txt
+```
+
+For using the **case_sensitive** variable
+
+```bash
+export CASE_INSENSITIVE=true
+```
+
+or
+
+```bash
+export CASE_INSENSITIVE=false
 ```
